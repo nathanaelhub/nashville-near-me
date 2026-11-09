@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nashville Near Me</title>
+<meta name="description" content="Type a Nashville address and see the rezonings, zoning appeals and building permits around it, straight from Metro's public records.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top"><div class="wrap"><p class="eyebrow">Nashville Near Me</p></div></header>
+<main class="wrap">
+  <h1>What's happening near me?</h1>
+  <p class="lede">Type a Nashville address to see the rezonings, zoning appeals and building permits around it.
+  Everything comes straight from Metro Nashville's public records, with each record's case or permit number
+  so you can look it up.</p>
+
+  <form id="search" class="search" role="search">
+    <label class="grow">Address
+      <input name="address" type="text" autocomplete="street-address" placeholder="1 Public Square" required></label>
+    <label>Within
+      <select name="r">
+        <option value="0.25">¼ mile</option>
+        <option value="0.5" selected>½ mile</option>
+        <option value="1">1 mile</option>
+      </select></label>
+    <button type="submit">Look</button>
+  </form>
+  <noscript><p class="hint">This page needs JavaScript: it asks Metro's public map service directly from your browser.</p></noscript>
+  <div id="status" class="status" aria-live="polite"></div>
+  <div id="results"></div>
+
+  <section class="about">
+    <h2>Where this comes from</h2>
+    <ul>
+      <li><strong>Zoning and planning cases</strong>: Metro Planning's Development Tracker. Cases still open are shown,
+        with the Planning Commission hearing date when one is set. If a case became a council bill, it links to the
+        bill's plain-language page on the <a href="https://nathanaelhub.github.io/nashville-council-digest/">Nashville Council Digest</a>.</li>
+      <li><strong>Zoning appeals</strong>: Board of Zoning Appeals cases heard in the last year or scheduled.</li>
+      <li><strong>Building permits</strong>: permits issued in the last year, and applications still in review,
+        from Metro Codes.</li>
+      <li>Your address is matched against Metro's parcel map. Distances are measured from that parcel.</li>
+    </ul>
+    <p class="hint">The descriptions are Metro's own words. Nothing here is written by AI; phone numbers and email
+    addresses in permit notes are removed, and owner and applicant names are never requested. Not affiliated with
+    Metro Nashville; always confirm with the official record.
+    <a href="https://github.com/nathanaelhub/nashville-near-me">How this works</a>.</p>
+  </section>
+</main>
+<script type="module" src="src/app.js"></script>
+</body>
+</html>
