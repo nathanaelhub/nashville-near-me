@@ -3,7 +3,7 @@
 **What's happening near me?** Type a Nashville address and see the rezonings, zoning appeals and
 building permits around it, straight from Metro Nashville's public records.
 
-**Live site:** https://nathanaelhub.github.io/nashville-near-me/
+**Live site:** https://nathanaelhub.github.io/nashville-near-me/ (mirror: https://nashville-near-me.vercel.app)
 
 Most residents learn about a rezoning from a sign in a yard, a week before the hearing. The records
 are all public, but they're spread across Metro Planning's Development Tracker, the Board of Zoning
