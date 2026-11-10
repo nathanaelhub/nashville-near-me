@@ -52,7 +52,7 @@ the digest's district page.
 - **Static HTML, CSS and JavaScript modules**, no build step and no dependencies
 - **Data:** Metro Nashville's public ArcGIS REST layers (Parcels, Development Tracker, BZA, Codes permits)
 - **Tests:** `node --test` (Node 20+)
-- **Hosting:** GitHub Pages
+- **Hosting:** GitHub Pages, mirrored on Vercel; both deploy on every push to `main`
 
 ## Run
 
